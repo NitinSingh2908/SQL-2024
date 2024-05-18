@@ -1,0 +1,41 @@
+show databases;
+#create a database
+create database test;
+show tables from sakila;
+
+
+#Update Command
+SELECT * FROM test.car_dekho;
+update test.car_dekho
+set model_name='Tiago EV'
+where id in(2,8,16,27,34,40,48,59,66,72,80,91,98,104,112,123,130,136,144);
+
+SELECT * FROM test.car_dekho;
+update test.car_dekho
+Set model_name = 'Honda city'
+where id in (6,15,25,38,47,57,70,79,89,102,111,121,134,143);
+
+#Alter Command
+alter table test.owner
+add email varchar (200) ;
+
+SELECT * FROM test.owner;
+alter table test.owner
+add alternate_Phone_number varchar(15) ;
+
+SELECT * FROM test.owner;
+
+alter table test.owner
+drop column email;
+
+#To Modify column owner_name
+Alter table test.owner
+modify column alternate_Phone_number int(45);
+
+#Drop & Truncate command
+Create Database test.waste;
+drop database waste;
+truncate table test.car_dekho;
+
+#
+
