@@ -1,0 +1,1 @@
+SELECT * FROM ride_db.rider;
